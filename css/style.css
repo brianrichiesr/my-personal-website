@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 10px 10px;
 }
 
 #logo {
@@ -37,4 +37,46 @@ header {
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+@media (max-width: 1200px) {
+    #banner {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #banner {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    #banner {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 440px) {
+    header {
+        flex-wrap: wrap;
+        padding: 18px 10px;
+        height: 220px;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    #banner {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 325px) {
+    #banner {
+        font-size: 18px;
+    }
 }
