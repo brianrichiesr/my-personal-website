@@ -32,6 +32,22 @@ main {
     margin-bottom: 100px;
 }
 
+button {
+    width: 100px;
+    height: 35px;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    background-color: #850a93;
+    color: #eee;
+    margin-left: 25px;
+}
+
+.h2WithClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     height: 150px;
     border-bottom: 5px solid #eee;
