@@ -1,5 +1,8 @@
+/* Brian Richie CSS for Demo Site */
+
+/* =====   Body and General Element Styles   ===== */
 body {
-    background: #850a93;
+    background: #21261d;
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #eee;
@@ -24,37 +27,30 @@ a:hover {
     color: #000;
 }
 
-figcaption {
-    font-size: 2em;
-}
-
-main {
-    margin-bottom: 100px;
-}
-
 button {
     width: 100px;
     height: 35px;
     border: 5px solid #eee;
     border-radius: 10px;
-    background-color: #850a93;
+    background-color: #21261d;
     color: #eee;
     margin-left: 25px;
+    transition: all .4s;
 }
 
-.h2WithClass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button:hover {
+    background-color: #6f0466;
+    border-width: 7px;
 }
 
+/* ===== Header Styles   ======*/
 header {
     height: 150px;
     border-bottom: 5px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px 10px;
+    padding: 0 25px 10px 10px;
 }
 
 #logo {
@@ -66,11 +62,12 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    transition: all .2s;
+    transition: all .4s;
 }
 
 #logo:hover {
     background-image: url(../assets/me.jpeg);
+    border-color: #6f0466;
 }
 
 #banner {
@@ -82,13 +79,51 @@ header {
     align-items: center;
 }
 
-figure img {
-    margin-bottom: 50px;
+/* ===== Main Styles ===== */
+main {
+    margin-bottom: 100px;
 }
 
+figcaption {
+    font-size: 2em;
+}
+
+figure img {
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+.h2WithClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* =====   Media Queries   ===== */
 @media (max-width: 1200px) {
     #banner {
         font-size: 40px;
+    }
+
+    figure img {
+        margin-bottom: 50px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .h2WithClass {
+        height: 100px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    button {
+        margin-left: 0;
     }
 }
 
