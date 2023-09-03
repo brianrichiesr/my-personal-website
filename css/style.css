@@ -3,13 +3,14 @@ body {
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #eee;
+    overflow-y: auto;
 }
 
 hr {
     width: 80%;
 }
 
-h2 {
+h2, figure {
     margin: 50px 0;
     text-align: center;
 }
@@ -21,6 +22,14 @@ a {
 
 a:hover {
     color: #000;
+}
+
+figcaption {
+    font-size: 2em;
+}
+
+main {
+    margin-bottom: 100px;
 }
 
 header {
@@ -55,6 +64,10 @@ header {
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+figure img {
+    margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
